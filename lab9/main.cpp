@@ -36,7 +36,7 @@ uint64_t getMinTicks(int* array, size_t size) {
 }
 
 int main() {
-    size_t offset = (16 * 1024 * 1024) / sizeof(int);   //16 Мб
+    size_t offset = (8 * 1024 * 1024) / sizeof(int);   
     size_t size = (32 * 1024) / sizeof(int);
     ofstream file("results.csv");
     if (!file.is_open()) {
